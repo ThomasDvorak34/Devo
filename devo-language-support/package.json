@@ -1,0 +1,25 @@
+{
+  "name": "devo-language-support",
+  "displayName": "Devo Language Support",
+  "description": "Syntax highlighting for Devo programs",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "devo",
+      "aliases": ["Devo", "devo"],
+      "extensions": [".devo",".dvo"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "devo",
+      "scopeName": "source.devo",
+      "path": "./syntaxes/devo.tmLanguage.json"
+    }]
+  }
+}
