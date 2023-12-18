@@ -1,0 +1,70 @@
+Example Code:
+// all variables are global except parameters and unless specified
+// cannot declare local variables in the global scope
+// type can be 'mixed'
+// can import and export files? ? ? ? ? ? ? ? ? 
+
+store { name } as { value };
+store unset { name };
+store array { name } as { value };
+store const { name } as { value }; <-- Must have value
+
+function { name }( { param_name }: { param_type } ): { return_type } {
+	store local { name } as { value }
+	return { type || variable };
+}
+
+define class { class_name } (optional) extends { another_class_name } {
+	store local { name } as { value };
+	constructor({ parameters }) {
+		
+	}
+
+	// functions can be declared here
+	// but can be class-specific
+
+	private function { name }({ parameters }): { return_type } {
+		
+	}
+}
+
+if ( { condition } ) {
+
+} else if ( { condition } ) {
+
+} else {
+
+}
+
+while ( { condition } ) {
+
+}
+
+for (store local { variable_name } as 0; { condition }; { operation }) {
+	// do something
+}
+
+store { name } as { condition } ? { if_true } : { if_false };
+
+terminate; <-- kills the script
+
+// pre-built functions
+
+function print(text: mixed, new_line: boolean): void {
+	// draw text to the console
+	if (new_line) {
+		// draw text to the console and end line
+	}
+}
+
+function delete(variable: mixed): void {
+	// deletes the variable from the text
+}
+
+function getType(variable: mixed): mixed {
+	// returns the type the variable is
+}
+
+function isType(variable1: mixed, variable2: mixed): boolean {
+	return (getType(variable1) == getType(variable(2)) ? true : false;
+}

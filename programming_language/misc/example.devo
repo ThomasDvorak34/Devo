@@ -1,0 +1,37 @@
+store string name as "Josh";
+store number value as 17;
+store unset boolean isFinished; 
+store array mixed arr as [3, "F", null];
+store const number numOranges as 199;
+
+function add(a: number, b: number): number {
+	store local num val as (a + b);
+	return val;
+}
+
+define class Example {
+	store local number num as 10;
+	store unset local boolean isUnderstood;
+
+	constructor(test: number, isFinished: boolean) {
+		num = test;
+		isUnderstood = isFinished;
+	}
+
+	function getNum(): number {
+		return num;
+	}
+
+	function class-only doSomething(): void {
+		// do something...
+	}
+}
+
+if (value == name) {
+	print(value);
+} else if (name >= value) {
+	delete(name);
+} else {
+	terminate;	
+}
+
